@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-camera position="0 2 2"></a-camera>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="grey"></a-plane>
+      <a-assets>
+        <a-asset-item id="guy" src="https://raw.githubusercontent.com/JViniciusF/TesteAframe/master/drill_retopo/scene.gltf"></a-asset-item>
+      </a-assets>
+      <a-entity  position="0 1.5 0" rotation = "-92 90 0" scale="0.01 0.01 0.01" gltf-model="#guy" modify-materials></a-entity>
+      <a-sky color="#A9F5F2"></a-sky>
+    </a-scene>
+  </body>
+</html>
